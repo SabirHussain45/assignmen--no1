@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b;
+    char n;
+    while(true)
+    {
+        cout<<"Enter first number "<<endl;
+        cin>>a;
+
+        cout<<"Enter second number "<<endl;
+        cin>>b;
+
+        cout<<"For addition press f"<<endl;
+        cout<<"For subtraction press g"<<endl;
+        cout<<"For multiplication press h "<<endl;  
+        cout<<"For division press j"<<endl;
+        cout<<"For remainder press k"<<endl;
+        cin>>n;
+
+        if(n=='f')
+            cout<<"The sum is "<<a + b<<endl;
+
+        else if (n=='g')
+            cout<<"The subtraction is "<<a - n<<endl;
+
+        else if (n=='h')
+             cout<<"The multiplication is "<<a*b<<endl;
+
+         else if (n== 'j')
+             cout<<"The division is "<<a / b<<endl;
+
+         else if(n== 'k')
+                cout<<"The remainder id "<<a % n<<endl;
+            else
+                cout<<"program end"<<endl;
+    }
+    return 0;
+}
